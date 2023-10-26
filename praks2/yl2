@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Defineerin funktsiooni kasutajanimi
+kasutajanimi=$(whoami)
+
+# Suur algustäht kasutajanimele
+suuralg_kasutajanimi="${kasutajanimi^}"
+
+# Väljastan tervituse kasutajale 
+echo -n "Tere, "
+echo -n "$suuralg_kasutajanimi"
+echo "!"
