@@ -1,0 +1,18 @@
+#!/bin/bash
+# Eraldan käsu tühja reaga, et skripti loetavus oleks parem
+echo
+
+# Väljastab tänase päeva, kuu ja kuupäeva ning aasta
+date +"Today is %A, %B %d, %Y"
+
+# Väljastab hetkese kellaja
+date +"Time is %H:%M"
+
+# Eraldan käsu tühja reaga, et skripti loetavus oleks parem
+echo
+
+# Väljastab kalendrikuu ja aasta
+date +"Calendar of %B %Y"
+
+# Väljastab kalendrikuu joonise
+cal | tail -n 7
