@@ -1,0 +1,12 @@
+#!/bin/bash
+# Skript bussiekskursioonide korraldajale
+# Küsib kasutajalt mitu reisijat  ja kohta on ning muudab need muutujateks
+read -p "Mitu reisijat on grupis?: " reisijad
+read -p "Mitu kohta on bussis?: " kohad
+
+# Arvutused, mitu täis bussi ning mitu jäi maha
+tais_bussid=$((reisijad / kohad))
+mahajaanud=$((reisijad % kohad))
+
+# Väljastab arvutused sõnena
+echo "Täielikult täidetud busse on $tais_bussid ja inimesi on maha jäänud $mahajaanud"
