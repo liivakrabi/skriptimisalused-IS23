@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Küsib ees- ja perekonnanime ning salvestab need muutujateks
+read -p "Sisesta oma ees- ja perenimi: " eesnimi perenimi
+
+#Väljastab ees- ja perekonnanime
+echo "Sinu eesnimi on $eesnimi ja perenimi $perenimi."
