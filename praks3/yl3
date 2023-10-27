@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Küsib kasutajalt ainepunktide ja nädalate arvu
+read -p "Sisestage ainepunktide arv: " ainepunktid
+read -p "Sisestage nädalate arv: " nadalad
+
+# Arvutab EAP ajakulu
+eap=$(($ainepunktid*26))
+
+# Muudab arvu komakohaliseks
+aeg=`echo "scale=1;$eap/$nadalad" | bc`
+
+# Ümardab arvu üles 
+aeg_ymarda="`echo "($aeg+0.9)/1" | bc`"
+
+# Väljastab eeldatava ajakulu
+echo $aeg_ymarda
