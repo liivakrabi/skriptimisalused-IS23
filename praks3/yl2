@@ -1,7 +1,12 @@
 #!/bin/bash
+
+#Ülesandes antud muutujad
 aasta=2016
 president="Kersti Kaljulaid"
 lause_keskosa=". aastal valiti Eesti presidendiks"
+
+#Muudab eelnevad muutujad üheks lauseks sõnena
 lause="$aasta$lause_keskosa $president"
 
+#Väljastab eelnevalt moodustatud lause
 echo "$lause"
