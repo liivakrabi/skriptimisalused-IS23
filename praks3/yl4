@@ -8,5 +8,11 @@ read -p "Mitu kohta on bussis?: " kohad
 tais_bussid=$((reisijad / kohad))
 mahajaanud=$((reisijad % kohad))
 
-# Väljastab arvutused sõnena
-echo "Täielikult täidetud busse on $tais_bussid ja inimesi on maha jäänud $mahajaanud"
+#Arvutus busside liitmiseks
+if test $mahajaanud -gt 0
+then
+	tais_bussid=$(($tais_bussid + 1))
+fi
+
+#Väljastame palju täis busse siis lõpuks vaja läheb
+echo "Kokku on vaja $tais_bussid taisbussi."
