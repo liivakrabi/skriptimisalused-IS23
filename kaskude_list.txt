@@ -1,0 +1,7 @@
+Käsud skriptimise jaoks:
+------------------------
+git status                - vaatab üle, kas on faile või skripte, mis ei ole GitHub reposse üles laaditud
+git add <file>...         - lisab faili
+chmod +x skriptinimi.sh   - lisab failile käivitamise õigused, ehk exec õigus
+commit <file>             - lisab selgituse justkui antud failile ja kinnitab faili
+git log                   - näitab git commitide ajalugu
