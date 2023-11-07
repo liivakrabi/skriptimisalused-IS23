@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#Küsime kasutajalt kuu sisendit
+read -p "Sisesta kuu number : " kuu
+
+#Otsustame, mis kuu on ning mida soovitada.
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+	then
+	echo "Hetkel on talv. Pane soojalt riidesse."
+elif test $kuu -ge 3 -a $kuu -le 5
+	then
+	echo "Hetkel on kevad. Varsti läheb soojaks!"
+elif test $kuu -ge 6 -a $kuu -le 8
+	then
+	echo "Hetkel on suvi. Mine naudi sooja ilma."
+elif test $kuu -ge 9 -a $kuu -le 11
+	then
+	echo "Hetkel on sügis. Võta vihmavari kaasa!"
+else
+	echo "Vigane sisend"
+fi
+
+
