@@ -5,3 +5,8 @@ git add <file>...         - lisab faili
 chmod +x skriptinimi.sh   - lisab failile käivitamise õigused, ehk exec õigus
 commit <file>             - lisab selgituse justkui antud failile ja kinnitab faili
 git log                   - näitab git commitide ajalugu
+-------------------------
+7.nov käsud
+bash -x script.sh         - debug mode skripti jaoks, näitab kuidas programm arvutab ja mis võib
+                            valesti minna.
+-------------------------
