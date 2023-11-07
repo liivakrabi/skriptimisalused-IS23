@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Palume kasutajal sisestada suvalise t2isarvu
+read -p "Sisesta suvaline t2isarv: " arv
+
+#Jagame arvu kahega
+jaak=$(( $arv % 2 ))
+
+#Kontrollin, kas arvon paaris v6i paaritu
+if [ $jaak -eq 0 ]
+then
+	echo "$arv on paaris."
+else
+	echo "$arv on paaritu."
+fi
+
